@@ -54,10 +54,6 @@ public class GuestBookController extends HttpServlet {
 		} else if("dform".equals(action)) {
 			System.out.println("[삭제폼]");
 			
-			//질문!
-			//int noId = Integer.parseInt(request.getParameter("no"));
-			//여기서 추출하고 어트리뷰트하는게 더 코드가 많이 쓰임 어떤게 더 효과적?
-			
 			RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/deleteForm.jsp");
 			rd.forward(request, response);
 			
