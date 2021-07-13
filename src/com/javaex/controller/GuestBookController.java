@@ -20,6 +20,7 @@ public class GuestBookController extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("컨트롤러");
+		request.setCharacterEncoding("UTF-8");
 		
 		String action = request.getParameter("action");
 		System.out.println(action);
@@ -39,8 +40,6 @@ public class GuestBookController extends HttpServlet {
 			
 		} else if ("add".equals(action)) {
 			System.out.println("[등록]");
-			
-			request.setCharacterEncoding("UTF-8");
 
 			GuestbookDao guestDao = new GuestbookDao();
 			
@@ -66,8 +65,6 @@ public class GuestBookController extends HttpServlet {
 			
 		} else if("delete".equals(action)) {
 			System.out.println("[삭제]");
-			
-			request.setCharacterEncoding("UTF-8");
 
 			GuestbookDao guestDao = new GuestbookDao();
 

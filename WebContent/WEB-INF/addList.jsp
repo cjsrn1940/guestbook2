@@ -16,7 +16,7 @@
 </head>
 <body>
 
-	<form action="/guestbook2/gbc" method="get">
+	<form action="/guestbook2/gbc" method="post">
 		<table border='1'>
 			<tr>
 				<td>이름</td>
