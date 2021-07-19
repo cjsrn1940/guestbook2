@@ -1,11 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
-
-<%
-	int noId = Integer.parseInt(request.getParameter("no"));
-	
-%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,7 +14,7 @@
 		<input type="hidden" name="action" value="delete">
 		<button type="submit">확인</button>
 		
-		<input type="hidden" name="no" value="<%=noId%>">
+		<input type="hidden" name="no" value="${param.no }">
 		
 	</form>
 	
